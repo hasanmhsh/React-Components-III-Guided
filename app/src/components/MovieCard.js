@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieCard = props => {
 	return (
-		<div className="movie-card" key={props.id}>
+		<div className="movie-card">
 			<h2>
 				{props.title} ({props.release_date})
 			</h2>

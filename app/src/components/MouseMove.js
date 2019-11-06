@@ -1,21 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 function MouseMove() {
-	const [position, setPosition] = useState({ x: 0, y: 0 });
+	// const [position, setPosition] = useState({ x: 0, y: 0 });
 
 	useEffect(() => {
-		function handleMouseMove(e) {
-			setPosition({ x: e.clientX, y: e.clientY });
-			// console.log(position);
-		};
-    
-    console.log('Added mousemove event listener');
-		window.addEventListener('mousemove', handleMouseMove);
-    
-    return () => {
-      console.log('Cleaned up mousemove event listener');
-			window.removeEventListener('mousemove', handleMouseMove);
-		};
+		// Add side effects here
 	}, []);
 
 	return (
