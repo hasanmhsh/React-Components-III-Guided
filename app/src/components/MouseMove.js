@@ -6,7 +6,7 @@ function MouseMove() {
 	useEffect(() => {
 		function handleMouseMove(e) {
 			setPosition({ x: e.clientX, y: e.clientY });
-			// console.log(position);
+			// console.log({ x: e.clientX, y: e.clientY });
 		};
     
     console.log('Added mousemove event listener');

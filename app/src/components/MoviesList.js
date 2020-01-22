@@ -18,8 +18,11 @@ function MoviesList() {
 			.catch(error => {
 				console.log('the data was not returned', error);
 			});
-	}, []);
+  }, []);
+  // ☝️ The empty dependency array prevents infinite loops
+		// It fires the effect hook on the first component mount
 
+    // YOU DO
 	  useEffect(() => {
 			axios
 				.get(`https://ghibliapi.herokuapp.com/people/`)
