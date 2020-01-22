@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 import './App.css';
 
-import MoviesList from './components/MoviesList';
-// import MouseMoveContainer from './components/MouseMoveContainer';
+// import MoviesList from './components/MoviesList';
+import MouseMoveContainer from './components/MouseMoveContainer';
 
 function App(props) {
 
@@ -35,8 +35,8 @@ function App(props) {
 			<header>
 				<h1>React Components III</h1>
 			</header>
-			<MoviesList />
-			{/* <MouseMoveContainer /> */}
+			{/* <MoviesList /> */}
+			<MouseMoveContainer />
 		</div>
 	);
 }
