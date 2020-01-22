@@ -14,7 +14,8 @@ function MoviesList() {
         console.log('The data was not returned', err);
       })
   }, []);
-  
+  // ☝️ The empty dependency array prevents infinite loops
+		// It fires the effect hook on the first component mount
 	return (
 		<div className="movies-container">
 			
