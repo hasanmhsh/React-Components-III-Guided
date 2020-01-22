@@ -21,6 +21,15 @@ function App(props) {
     // Variables that we want to watch for changes
   ]);
 
+  // Rufai
+  useEffect(() => {
+    console.log("Good morning");
+    
+    return () => {
+      console.log("bye for now");
+    };
+  }, []);
+
 	return (
 		<div className="App">
 			<header>
